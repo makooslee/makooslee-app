@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+<changeSet id="1" author="sunpp">
+        <sql>
+            <![CDATA[
+                create sequence  tbl_user_id_seq start 101;
+                create table tbl_user(
+                    id  bigint not null primary key default nextval('tbl_user_id_seq'),
+                    login_name varchar(128) not null,
+                    user_name varchar(128),
+                    passwd varchar(128),
+                    email varchar(64)
+                );
+                create unique index tbl_user_login_name_index on tbl_user(login_name);
+                insert into tbl_user(id,login_name,user_name, passwd, email) values(1, 'admin', 'admin', 'admin','1021647079@qq.com');
+            ]]>
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
