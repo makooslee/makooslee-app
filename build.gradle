@@ -41,6 +41,7 @@ dependencies {
 	compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.3.0.CR2'
 	compile group: 'org.hibernate', name: 'hibernate-validator', version: '6.0.9.Final'
     compile group: 'org.springframework.security', name: 'spring-security-core', version: '5.0.4.RELEASE'
+    compile group: 'org.webjars', name: 'angularjs', version: '2.0.0-alpha.22'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.0.1.RELEASE'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.security:spring-security-test')
