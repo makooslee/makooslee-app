@@ -1,4 +1,4 @@
-package com.makooslee.makoosleeapp.User;
+package com.makooslee.User;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

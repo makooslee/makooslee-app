@@ -1,4 +1,4 @@
-package com.makooslee.makoosleeapp.common;
+package com.makooslee.common;
 
 import com.zaxxer.hikari.HikariDataSource;
 import liquibase.integration.spring.SpringLiquibase;

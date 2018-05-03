@@ -1,7 +1,7 @@
-package com.makooslee.makoosleeapp.User.respository;
+package com.makooslee.User.respository;
 
+import com.makooslee.User.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.makooslee.makoosleeapp.User.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 

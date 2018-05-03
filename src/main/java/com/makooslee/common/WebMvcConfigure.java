@@ -1,4 +1,4 @@
-package com.makooslee.makoosleeapp.common;
+package com.makooslee.common;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
@@ -10,7 +10,7 @@ public class WebMvcConfigure extends WebMvcConfigurerAdapter{
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("forward:resources/static/login.html");
+        registry.addViewController("/").setViewName("forward:/login.html");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
         super.addViewControllers(registry);
     }

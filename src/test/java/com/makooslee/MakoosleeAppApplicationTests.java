@@ -1,4 +1,4 @@
-package com.makooslee.makoosleeapp;
+package com.makooslee;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
