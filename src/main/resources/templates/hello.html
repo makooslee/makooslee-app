@@ -11,10 +11,10 @@
 <!--引入结束-->
 </head>  
 	<body oncontextmenu="return false" ondragstart="return false" style="zoom: 1;">
-	 
+	 gfh
 		<!-- 代码开始 -->
 		<div id="loginbody">
-		    <div id="background" style="width:100%;height:100%;background:black;background-image:url(allImages/imag/01.JPG);">
+		    <div id="background" style="width:100%;height:100%;background:black;background-image:url('allImages/01.jpg');">
 		    	<div id="login" style="box-sizing:border-box;
 				border-radius: 20px;
 				transition: box-shadow linear 1s;
@@ -40,7 +40,7 @@
 			var add = true; 
 			var changeColor = function() {
 				$("#login").css("box-shadow", '0 0 40px' + color[colorid]);
-				$("#background").css("background-image", 'url(allImages/imag/0' + colorid +".JPG");
+				$("#background").css("background-image", 'url(allImages/0' + colorid +".jpg");
 				if (colorid == 3) {
 					add = false;
 					colorid --;

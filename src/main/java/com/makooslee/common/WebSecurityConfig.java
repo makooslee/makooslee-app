@@ -33,7 +33,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         //解决静态资源被拦截的问题
         web.ignoring().antMatchers("/allCss/**")
                 .antMatchers("/allJs/**")
-                .antMatchers("/allImages/**");
-
+                .antMatchers("/allImages/*");
     }
 }
