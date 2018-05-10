@@ -132,8 +132,45 @@ body{
     }
 .login { border-radius:10px; border:#333 1px solid; box-shadow:#A20051 0px 0px 20px; transition: box-shadow linear 2s; padding:20px;
     border:10px solid transparent;
-    background: -webkit-radial-gradient(circle, #0A0A0A, #030303); /* Safari 5.1 - 6.0 */
-    background: -o-radial-gradient(circle,#0A0A0A, #030303); /* Opera 11.6 - 12.0 */
-    background: -moz-radial-gradient(circle,#0A0A0A, #030303); /* Firefox 3.6 - 15 */
-    background: radial-gradient(circle,#0A0A0A, #030303); /* 标准的语法（必须放在最后） */ }
-.login:hover {box-shadow: #FF0 0px 0px 220px;border:5px ridge rgba(238, 238, 238, 0.13)}
+    background: -webkit-radial-gradient(circle, #0A0A0A, #030303);
+    background: -o-radial-gradient(circle,#0A0A0A, #030303);
+    background: -moz-radial-gradient(circle,#0A0A0A, #030303);
+    background: radial-gradient(circle,#0A0A0A, #030303);
+    }
+
+.login:hover {
+    box-shadow: #FF0 0px 0px 220px;
+    border:5px ridge rgba(238, 238, 238, 0.13)
+}
+
+.login-form {
+    width: 100%;
+    height: 100%
+}
+
+.form-group {
+    margin-top: 35px;
+    float:left;
+}
+
+.form-group label{
+    font-size:22px;
+    font-family: 楷体;
+    margin-top: 5px;
+    color: lightgrey;
+}
+
+.login-form button{
+    margin-top:30px;
+    border-radius: 10px;
+    width:100%;
+    height:40px;
+}
+
+.login-form .loginButton{
+    background-color: darkgrey;
+}
+
+.login-form .loginButton:hover{
+    background-color: lightgrey;
+}

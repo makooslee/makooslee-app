@@ -11,24 +11,32 @@
 <!--引入结束-->
 </head>  
 	<body oncontextmenu="return false" ondragstart="return false" style="zoom: 1;">
-	 gfh
 		<!-- 代码开始 -->
 		<div id="loginbody">
-		    <div id="background" style="width:100%;height:100%;background:black;background-image:url('allImages/01.jpg');">
+		    <div id="background" style="width:100%;height:100%;background:black;">
 		    	<div id="login" style="box-sizing:border-box;
 				border-radius: 20px;
 				transition: box-shadow linear 1s;
 				position: absolute;top:50%;left:50%;width:400px;height:300px;margin-left:-200px;margin-top:-150px">
 
-					<form>												
-						<div class="form-group">
-							<label class="col-md-4" style="font-size:22px;font-family: 楷体;margin-top: 5px">登陆名</label>
+					<form class="col-md-12 login-form">
+						<div class="col-md-12 form-group">
+							<label class="col-md-4" >登陆名</label>
 							<div class="col-md-8">
 								<input type="text" class="form-control" id="name"
 									   style="background-color: #000000;border-radius:10px solid red;"
 								   placeholder="请输入名称">
 						    </div>
 						</div>
+						<div class="col-md-12 form-group">
+							<label class="col-md-4">密码</label>
+							<div class="col-md-8">
+								<input type="password" class="form-control" id="password"
+									   style="background-color: #000000;border-radius:10px solid red;"
+									   placeholder="请输入密码">
+							</div>
+						</div>
+						<button type="submit" class="loginButton">登录</button>
 					</form>
 				</div>
 		    </div>
@@ -40,7 +48,7 @@
 			var add = true; 
 			var changeColor = function() {
 				$("#login").css("box-shadow", '0 0 40px' + color[colorid]);
-				$("#background").css("background-image", 'url(allImages/0' + colorid +".jpg");
+				//$("#background").css("background-image", 'url(allImages/0' + colorid +".jpg");
 				if (colorid == 3) {
 					add = false;
 					colorid --;
